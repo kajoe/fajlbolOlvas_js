@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+   <meta charset="UTF-8">
+</head>
+
 <body>
 
    <div id="demo">
       <h2>Fájl tartalmának beolvasása</h2>
-      <button type="button" onclick="loadDoc()">Beolvasás</button>
+      <button type="button" onclick="beolvas()">Beolvasás</button>
    </div>
 
    <script>
-      function loadDoc() {
+      function beolvas() {
          var xhttp = new XMLHttpRequest();
          xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
